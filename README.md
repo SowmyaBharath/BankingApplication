@@ -14,8 +14,8 @@ A Java RESTful API for fetching Customer Accounts and Account Transactions
 
 ### How to run
 ```sh
-gradle clean build
-Run as Java Application
+gradle run
+
 ```
 
 Application starts a jetty server on localhost port 8080 An H2 in memory database initialized with sample Customer,Account and Transactions
