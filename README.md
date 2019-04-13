@@ -10,6 +10,7 @@ A Java RESTful API for fetching Customer Accounts and Account Transactions
 - Junit
 - MapStruct
 - Lombok
+- Swagger
 
 
 ### How to run
@@ -22,6 +23,9 @@ Application starts a jetty server on localhost port 8080 An H2 in memory databas
 
 - http://localhost:8080/customers/100/accounts
 - http://localhost:8080/accounts/1000/transactions
+
+API Documentation:
+- http://localhost:8080/swagger-ui.html#/
 
 
 ### Available Services
