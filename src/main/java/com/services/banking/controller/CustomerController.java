@@ -10,15 +10,17 @@ import org.springframework.web.bind.annotation.RestController;
 import com.services.banking.model.SearchCustomerAccountResponse;
 import com.services.banking.service.CustomerService;
 
-import lombok.AllArgsConstructor;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 
+@Api(tags = {"Customers"})
 @RestController
 public class CustomerController {
 	
 	@Autowired
 	private CustomerService customerService;
 
-   
+	@ApiOperation(value = "Search Accounts by CustomerId")
     @GetMapping(value = "/customers/{customerId}/accounts")
     @ResponseBody
     public SearchCustomerAccountResponse searchAccountsByCustomerId(@PathVariable("customerId") Long customerId,Pageable pageable) {
